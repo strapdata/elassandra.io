@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Elassandra = Elasticsearch + Cassandra</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/small-business.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Elassandra.io</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="http://doc.elassandra.io/">Docs
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://hub.docker.com/r/strapdata/elassandra/">DockerHub</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/strapdata/elassandra">GitHub</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/strapdata/elassandra/releases">Download</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+      <!-- Heading Row -->
+      <div class="row my-4">
+        <div class="col-lg-6">
+          <img class="img-fluid rounded" src="elassandra.png" alt="Elassandra Logo">
+        </div>
+        <!-- /.col-lg-8 -->
+        <div class="col-lg-6">
+          <h1>The opensource database and search engine for multi-cloud applications</h1>
+          <p>Elassandra simplify your data stack by integrating <a href="https://www.elastic.co/fr/products/elasticsearch">Elasticseach</a><sup>&reg;</sup> into <a href="http://cassandra.apache.org/">Apache Cassandra</a><sup>&reg;</sup>.</p>
+        </div>
+        <!-- /.col-md-4 -->
+      </div>
+      <!-- /.row -->
+
+      <!-- Call to Action Well -->
+
+      <!-- Content Row -->
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h2 class="card-title">Cross Datacenter Replication</h2>
+              <p class="card-text">Apache Cassandra supports asynchronous multi-datacenters replication and various mechanisms to repair lost data. By closely integrating Elasticsearch with Cassandra, Elassandra provides search features on many datacenters.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- /.col-md-4 -->
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h2 class="card-title">Scale On-Demand</h2>
+              <p class="card-text">When it becomes necessary to increase read/write throughput, Elassandra automatically re-shards your Elasticsearch indices as new machines are added, allowing to smoothly scale-out to fit your business needs without down-time or heavy maintenance operations.</p>
+            </div>
+          </div>
+        </div>
+        <!-- /.col-md-4 -->
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h2 class="card-title">Real-Time Analytics</h2>
+              <p class="card-text">By indexing cassandra data into elasticsearch, you can provide continous and real-time data visualization for your application with <a href="https://www.elastic.co/fr/products/kibana">Kibana</a>.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <div class="card h-100">
+              <div class="card-body">
+                <h2 class="card-title">A Masteless Architecture</h2>
+                <p class="card-text">Elassandra remove the single point of failure of Elasticsearch by using a distributed transaction to manage its configuration.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- /.col-md-4 -->
+          <div class="col-md-4 mb-4">
+            <div class="card h-100">
+              <div class="card-body">
+                <h2 class="card-title">A Reliable Primary Datastore</h2>
+                <p class="card-text">Cassandra is optimised for write-intensive workloads, therefore, Elassandra is suitable for applications where a large amount of data needs to be inserted (such as infrastructure logging, IOT, or events).
+                  Then, Elasticsearch indices can be rebuilt at any time from Cassandra tables without data duplication.</p>
+              </div>
+            </div>
+          </div>
+          <!-- /.col-md-4 -->
+          <div class="col-md-4 mb-4">
+            <div class="card h-100">
+              <div class="card-body">
+                <h2 class="card-title">Continous Operations in the Cloud</h2>
+                <p class="card-text">Failover-based approaches do not truly achieve high availability for write operations.
+                  By its multi-master design, Elassandra remains always available when a server or a container failed or restart for a maintenance operation.</p>
+              </div>
+            </div>
+          </div>
+       </div>
+
+        <!-- /.col-md-4 -->
+        <section class="py-5">
+          <div class="container">
+            <h1>Community</h1>
+            <p>Elassandra is distributed under <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache License v2</A></p>
+            <h3>Mailing List</h3>
+            <p>See the <A HREF="https://groups.google.com/forum/#!forum/elassandra">Elassandra Google group</A>.</p>
+            <h3>Stack Overflow</h3>
+            <p>You can also check the <A HREF="https://stackoverflow.com/questions/tagged/elassandra">Q&A about using elassandra on Satck Overflow</A>.</p>
+            <h3>Support - Issue reports</h3>
+            <p>If you suspect that you have found a bug in Elassandra, you can report it on <a href="https://github.com/strapdata/elassandra/issues">github.com</a>.
+              Please provide as much details as you can on your issue, including your CQL schema and Elasticsearch mapping and <code>nodetool gossipinfo</code> output.</p>
+            <p>Commercial support is available form <a href="https://www.strapdata.com">Strap<b>data</b>.com</a>
+            <h3>News and articles</h3>
+            <ul>
+              <li><a href="https://dzone.com/articles/7-reasons-why-open-source-elassandra-cassandra-ela">7 Reasons Why Open-Source Elassandra (Cassandra + Elasticsearch) Is Worth a Look</a></li>
+              <li><a href="https://opensourceforu.com/2017/07/elassandra-to-leverage-huge-data-stack/">Why you need Elassandra to leverage your huge data stack</a></li>
+              <li><a href="https://simongui.github.io/2016/07/20/elassandra.html">Elassandra - large scale multi-datacenter elasticsearch</a></li>
+            </ul>
+          </div>
+      </section>
+
+      <section class="py-5">
+        <div class="container">
+          <h1>How to contribute</h1>
+          <p>Your're welcome to rise a pull request <a href="https://github.com/strapdata/elassandra/pulls">https://github.com/strapdata/elassandra/pulls</A>. </p>
+          <p>
+          <code>git clone --recurse-submodules https://github.com/strapdata/elassandra</code><br>
+          <code>cd elassandra</code><br>
+          <code>git checkout -b <i>pull_request_branch</i></code><br>
+          <code>gradle assemble</code>
+          </p>
+          <p>
+        </div>
+     </section>
+      <!-- /.row -->
+
+    </div>
+  </div>
+
+    <!-- /.container -->
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white small">Elasticsearch, Kibana, Logstash and Beat are trademarks of Elasticsearch BV, registered in the U.S. and in other countries.
+Apache Cassandra, Apache, Tomcat, Lucene, Hadoop, HDFS, Spark, and Cassandra are trademarks of the Apache Software Foundation or its subsidiaries in Canada, the United States and/or other countries.</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+
+</html>

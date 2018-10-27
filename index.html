@@ -15,8 +15,10 @@
 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-ga('create', 'UA-120256306-1', 'auto');
+ga('create', 'UA-120256306-1', 'auto', {allowLinker: true});
+ga('require', 'linker');
 ga('send', 'pageview');
+ga('linker:autoLink', ['elassandra.io', 'doc.elassandra.io', 'strapdata.com']);
 </script>
 <!-- End Google Analytics -->
 

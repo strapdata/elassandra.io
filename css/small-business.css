@@ -5,11 +5,23 @@
  */
 
 body {
-  padding-top: 54px;
+  padding-top: 88px;
 }
 
 @media (min-width: 992px) {
   body {
-    padding-top: 56px;
+    padding-top: 90px;
   }
+}
+
+#announcement {
+  text-align: center;
+  text-transform: uppercase;
+  padding: 5px 0;
+  background-color: #269ed6;
+  color: white;
+}
+
+#main-navbar {
+  top: 34px;
 }

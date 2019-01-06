@@ -41,10 +41,11 @@ ga('linker:autoLink', ['elassandra.io', 'doc.elassandra.io', 'strapdata.com']);
 
   </head>
 
-  <body>
+  <body>      
+    <a id="announcement" class="fixed-top" href="https://www.strapdata.com" target="_blank">Commercial support now available !</a>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <nav id="main-navbar" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container">
         <a class="navbar-brand" href="#">Elassandra.io</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -81,7 +82,7 @@ ga('linker:autoLink', ['elassandra.io', 'doc.elassandra.io', 'strapdata.com']);
         </div>
         <!-- /.col-lg-8 -->
         <div class="col-lg-6">
-          <h1>The opensource database and search engine for multi-cloud applications</h1>
+          <h1>The open source database and search engine for multi-cloud applications</h1>
           <p>Elassandra simplifies your data stack by integrating <a href="https://www.elastic.co/fr/products/elasticsearch">Elasticsearch</a><sup>&reg;</sup> into <a href="http://cassandra.apache.org/">Apache Cassandra</a><sup>&reg;</sup>.</p>
         </div>
         <!-- /.col-md-4 -->
@@ -106,7 +107,7 @@ ga('linker:autoLink', ['elassandra.io', 'doc.elassandra.io', 'strapdata.com']);
           <div class="card h-100">
             <div class="card-body">
               <h2 class="card-title">Scale On-Demand</h2>
-              <p class="card-text">When it becomes necessary to increase read/write throughput, Elassandra automatically re-shards your Elasticsearch indices as new machines are added, allowing to smoothly scale-out to fit your business needs without down-time or heavy maintenance operations.</p>
+              <p class="card-text">When you need to increase read/write throughput, Elassandra automatically re-shards your Elasticsearch indices as new machines are added, allowing you to smoothly scale-out to fit your business needs without down-time or heavy maintenance operations requirements.</p>
             </div>
           </div>
         </div>
@@ -115,7 +116,7 @@ ga('linker:autoLink', ['elassandra.io', 'doc.elassandra.io', 'strapdata.com']);
           <div class="card h-100">
             <div class="card-body">
               <h2 class="card-title">Real-Time Analytics</h2>
-              <p class="card-text">By indexing cassandra data into elasticsearch, you can provide continous and real-time data visualization for your application with <a href="https://www.elastic.co/fr/products/kibana">Kibana</a>.</p>
+              <p class="card-text">By indexing cassandra data into Elasticsearch, <a href="https://www.elastic.co/fr/products/kibana">Kibana</a> will allow you to get continuous and real-time data visualization of your applications.</p>
             </div>
           </div>
         </div>
@@ -125,7 +126,7 @@ ga('linker:autoLink', ['elassandra.io', 'doc.elassandra.io', 'strapdata.com']);
             <div class="card h-100">
               <div class="card-body">
                 <h2 class="card-title">A Masterless Architecture</h2>
-                <p class="card-text">Elassandra removes the single point of failure of Elasticsearch by using a distributed transaction to manage its configuration.</p>
+                <p class="card-text">By using a distributed transaction, Elassandra removes the single point of failure of Elasticsearch to manage its configuration.</p>
               </div>
             </div>
           </div>
@@ -135,8 +136,8 @@ ga('linker:autoLink', ['elassandra.io', 'doc.elassandra.io', 'strapdata.com']);
             <div class="card h-100">
               <div class="card-body">
                 <h2 class="card-title">A Reliable Primary Datastore</h2>
-                <p class="card-text">Cassandra is optimised for write-intensive workloads, therefore, Elassandra is suitable for applications where a large amount of data needs to be inserted (such as infrastructure logging, IOT, or events).
-                  Then, Elasticsearch indices can be rebuilt at any time from Cassandra tables without data duplication.</p>
+                <p class="card-text">Cassandra is designed for write-intensive workloads, hence, making Elassandra suitable for applications where a large amount of data is to be inserted (such as infrastructure logging, IOT, or events).
+                  So, Elasticsearch indices can be rebuilt whenever needed using the Cassandra tables without the creation of data duplication.</p>
               </div>
             </div>
           </div>
@@ -145,8 +146,8 @@ ga('linker:autoLink', ['elassandra.io', 'doc.elassandra.io', 'strapdata.com']);
             <div class="card h-100">
               <div class="card-body">
                 <h2 class="card-title">Continous Operations in the Cloud</h2>
-                <p class="card-text">Failover-based approaches do not truly achieve high availability for write operations.
-                  By its multi-master design, Elassandra remains always available when a server/container failed or restart for a maintenance operation.</p>
+                <p class="card-text">Failover-based approaches do not truly achieve high availability as far as write operations are concerned.
+                  Thanks to its multi-master design, Elassandra is always available either when a server/container fails or restarts because of some maintenance operations.</p>
               </div>
             </div>
           </div>
@@ -158,13 +159,13 @@ ga('linker:autoLink', ['elassandra.io', 'doc.elassandra.io', 'strapdata.com']);
             <h1>Community</h1>
             <p>Elassandra is distributed under <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache License v2</A></p>
             <h3>Mailing List</h3>
-            <p>See the <A HREF="https://groups.google.com/forum/#!forum/elassandra">Elassandra Google group</A>.</p>
+            <p>Join us at <A HREF="https://groups.google.com/forum/#!forum/elassandra">Elassandra Google group</A>.</p>
             <h3>Stack Overflow</h3>
-            <p>You can also check the <A HREF="https://stackoverflow.com/questions/tagged/elassandra">Q&A about using elassandra on Satck Overflow</A>.</p>
+            <p>For further information visit <A HREF="https://stackoverflow.com/questions/tagged/elassandra">Q&A about using elassandra on Satck Overflow</A>.</p>
             <h3>Support - Issue reports</h3>
-            <p>If you suspect that you have found a bug in Elassandra, you can report it on <a href="https://github.com/strapdata/elassandra/issues">github.com</a>.
-              Please provide as much details as you can on your issue, including your CQL schema and Elasticsearch mapping and <code>nodetool gossipinfo</code> output.</p>
-            <p>Commercial support is available form <a href="https://www.strapdata.com">Strap<b>data</b>.com</a>
+            <p>If you suspect a bug in Elassandra, please do report it on <a href="https://github.com/strapdata/elassandra/issues">github.com</a>.
+              Please provide us with as much details as you can, such as info on your CQL schema and Elasticsearch mapping and <code>nodetool gossipinfo</code> output.</p>
+            <p>Commercial support is available on <a href="https://www.strapdata.com">Strap<b>data</b>.com</a>
             <h3>News and articles</h3>
             <ul>
               <li><a href="https://dzone.com/articles/7-reasons-why-open-source-elassandra-cassandra-ela">7 Reasons Why Open-Source Elassandra (Cassandra + Elasticsearch) Is Worth a Look</a></li>
@@ -177,7 +178,7 @@ ga('linker:autoLink', ['elassandra.io', 'doc.elassandra.io', 'strapdata.com']);
       <section class="py-5">
         <div class="container">
           <h1>How to contribute</h1>
-          <p>Your're welcome to rise a pull request <a href="https://github.com/strapdata/elassandra/pulls">https://github.com/strapdata/elassandra/pulls</A>. </p>
+          <p>For pull requests <a href="https://github.com/strapdata/elassandra/pulls">https://github.com/strapdata/elassandra/pulls</A>. </p>
           <p>
           <code>git clone --recurse-submodules https://github.com/strapdata/elassandra</code><br>
           <code>cd elassandra</code><br>
